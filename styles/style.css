@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.panel {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 90rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+section h1 {
+    font-size: 4rem;
+    color: #0074D9;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #3C4858;
+    margin: 10px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #3C4858;
+    margin: 10px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #999;
+    margin: 10px;
+}
+
+section a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section a:hover {
+    color: skyblue;
+}
+
+section .about-me {
+    max-width: 600px;
+    text-align: center;
+}
+
+section .contact-method {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+section .skill-list, .progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 40px;
+}
+
+section .contact-method div {
+    padding: 25px;
+}
+
+section .contact-method div img {
+    width: 500px;
+}
+
+section#about {
+    background: url('../images/about.jpg') no-repeat center center/cover;
+}
+
+section#experience {
+    background: url('../images/experience.jpg') no-repeat center center/cover;
+}
+
+section#project {
+    background: url('../images/project.jpg') no-repeat center center/cover;
+}
+
+section#skill {
+    background: url('../images/skill.jpg') no-repeat center center/cover;
+}
+
+section#contact {
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+}
+
+#install-extension {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3C4858;
+}
+
+#install-extension:hover {
+    background-color: #0074D9;
+    border: none;
+    color: #fff;
+}
+
+.timeline {
+    width: 1000px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.timeline:before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #c5c5c5;
+}
+
+.timeline ul li {
+    width: 50%;
+    list-style: none;
+    position: relative;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.timeline ul li:nth-child(odd):before, .timeline ul li:nth-child(even):before {
+    position: absolute;
+    top: 24px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0, 116, 217, 1);
+    box-shadow: 0 0 0 3px rgba(0, 116, 217, 0.2);
+}
+
+.timeline ul li:nth-child(odd):before {
+    right: -6px;
+}
+
+.timeline ul li:nth-child(even):before {
+    left: -4px;
+}
+
+.timeline h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: rgba(0, 116, 217, 1);
+}
+
+.timeline p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.timeline ul li:nth-child(odd) .time, .timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(0, 116, 217, 1);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px rgba(0, 116, 217, 0.2);
+}
+
+.timeline ul li:nth-child(odd) .time {
+    right: -245px;
+}
+
+.timeline ul li:nth-child(even) .time {
+    left: -245px;
+}
+
+p b {
+    color: #fff;
+}
+
+.progress {
+    width: 600px;
+}
+
+.progress li {
+    position: relative;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.progress li:before {
+    top: calc(100% + 10px);
+    left: 0;
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 100%;
+    background: rgba(0, 116, 217, 0.5);
+}
+
+.progress li:after {
+    top: calc(100% + 10px);
+    left: 0;
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 0;
+    background: rgba(0, 116, 217, 1);
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.progress li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+.progress li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 90%;
+    }
+}
+
+.progress li.js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 85%;
+    }
+}
+
+.progress li.react:after {
+    animation-name: react;
+}
+
+@keyframes react {
+    to {
+        width: 80%;
+    }
+}
+
+.progress li.node:after {
+    animation-name: node;
+}
+
+@keyframes node {
+    to {
+        width: 70%;
+    }
+}
