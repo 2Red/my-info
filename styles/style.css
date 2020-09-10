@@ -493,3 +493,75 @@ p b {
     flex-flow: column;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .navbar ul li {
+    font-size: 11px;
+  }
+
+  section {
+    height: 110vh;
+  }
+
+  .progress,
+  .about-me {
+    width: 300px;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section h3 {
+    font-size: 1rem;
+  }
+
+  .progress li {
+    margin: 10px 0;
+  }
+
+  .progress li:before,
+  .progress li:after {
+    top: calc(100% + 5px);
+    height: 10px;
+  }
+
+  .timeline ul li:nth-child(odd) .time {
+    top: 8px;
+    right: -158px;
+    padding: 5px 10px;
+  }
+
+  .timeline ul li:nth-child(even) .time {
+    top: 8px;
+    left: -158px;
+    padding: 5px 10px;
+  }
+
+  #install-extension {
+    width: 150px;
+    height: 40px;
+  }
+
+  section h3,
+  section .skill-list {
+    max-width: 320px;
+  }
+
+  .timeline ul li {
+    padding: 10px 15px;
+  }
+
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before {
+    top: 15px;
+  }
+
+  .timeline {
+    width: 344px;
+  }
+}
