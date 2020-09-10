@@ -25,6 +25,7 @@ body {
   width: 100%;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
 }
 
 .navbar ul {
@@ -427,5 +428,60 @@ p b {
 
   section .contact-method {
     width: 444px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar ul li {
+    font-size: 14px;
+  }
+
+  section h1 {
+    font-size: 2.5rem;
+  }
+
+  section .about-me {
+    max-width: 400px;
+  }
+
+  .progress {
+    width: 340px;
+    padding: 0;
+  }
+
+  section#experience {
+    height: 140vh;
+  }
+
+  .timeline {
+    width: 460px;
+  }
+
+  .timeline ul li:nth-child(odd) .time {
+    right: -170px;
+  }
+
+  .timeline ul li:nth-child(even) .time {
+    left: -170px;
+  }
+
+  section h3 {
+    max-width: 390px;
+  }
+
+  section h1 {
+    max-width: 345px;
+  }
+
+  section .skill-list {
+    width: 360px;
+  }
+
+  section .contact-method {
+    width: 380px;
+  }
+
+  section .contact-method div {
+    padding: 10px;
   }
 }
