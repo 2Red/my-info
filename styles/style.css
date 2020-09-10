@@ -441,7 +441,7 @@ p b {
   }
 
   section .about-me {
-    max-width: 400px;
+    max-width: 370px;
   }
 
   .progress {
@@ -483,5 +483,13 @@ p b {
 
   section .contact-method div {
     padding: 10px;
+  }
+
+  .panel {
+    padding: 110px;
+  }
+
+  section .contact-method {
+    flex-flow: column;
   }
 }
