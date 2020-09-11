@@ -31,3 +31,13 @@ function resetAnimation(element, className) {
     // -> and re-adding the class
     element.classList.add(className);
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
