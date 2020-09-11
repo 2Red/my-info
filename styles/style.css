@@ -233,66 +233,8 @@ section#contact {
   display: none;
 }
 
-/* Responsive */
-
-@media (max-width: 375px) {
-  #skill .panel {
-    padding-top: 0;
-  }
-  .skill-list {
-    padding: 0;
-  }
-
-  .normal {
-    display: none;
-  }
-
-  .small {
-    display: block;
-  }
-}
-
-@media (max-width: 375px) {
-  ul#menu li {
-    margin: 0 5px;
-  }
-}
-
-@media (min-width: 768px) {
-  .about-me {
-    width: 70%;
-  }
-
-  .progress {
-    width: 70%;
-  }
-
-  .progress li {
-    width: 90%;
-  }
-
-  .contact-method {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 1366px) {
-  .my-extension {
-    flex-direction: row;
-  }
-
-  .my-extension div:nth-child(1) {
-    padding: 20px;
-  }
-
-  .my-extension div img {
-    width: 500px;
-    height: auto;
-    display: block;
-  }
-}
-
 /* Timeline */
+
 .timeline {
   width: 1000px;
   margin: 50px auto;
@@ -383,4 +325,93 @@ section#contact {
 
 .timeline ul li:nth-child(even) .time {
   left: -280px;
+}
+
+p b {
+  color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 320px) {
+  ul#menu li {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  #skill .panel {
+    padding-top: 0;
+  }
+  .skill-list {
+    padding: 0;
+  }
+  .normal {
+    display: none;
+  }
+  .small {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    width: 70%;
+  }
+  .progress {
+    width: 70%;
+  }
+  .progress li {
+    width: 90%;
+  }
+  .contact-method {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1023px) {
+  .timeline {
+    width: auto;
+    margin: 0;
+  }
+  .timeline:before {
+    left: 0;
+    top: -10px;
+    height: 95%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even) {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before {
+    top: -10px;
+    left: -4px;
+    right: auto;
+  }
+  .timeline ul li:nth-child(even) .time {
+    top: -20px;
+    left: 38px;
+  }
+  .timeline ul li:nth-child(odd) .time {
+    top: -20px;
+    left: 38px;
+    right: auto;
+  }
+}
+
+@media (min-width: 1366px) {
+  .my-extension {
+    flex-direction: row;
+  }
+  .my-extension div:nth-child(1) {
+    padding: 20px;
+  }
+  .my-extension div img {
+    width: 500px;
+    height: auto;
+    display: block;
+  }
 }
