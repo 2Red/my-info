@@ -24,7 +24,7 @@ body {
   position: fixed;
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 5vh;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 99;
 }
@@ -32,19 +32,22 @@ body {
 .navbar ul {
   display: flex;
   width: 100%;
+  /* horizontal align */
   justify-content: center;
+  /* vertical algin */
+  align-items: center;
   list-style-type: none;
 }
 
 .navbar ul li {
-  margin: 0 1rem;
-  padding: 1rem;
+  margin: 0 2vw;
 }
 
 .navbar ul li a {
   text-decoration: none;
   color: #f4f4f4;
   text-transform: uppercase;
+  font-size: 1vw;
 }
 
 .navbar ul li a:hover {
@@ -64,36 +67,35 @@ section {
 
 .panel {
   background-color: rgba(0, 0, 0, 0.7);
-  width: 90rem;
-  height: 40rem;
+  width: 90%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 section h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   color: #0074d9;
 }
 
 section h2 {
-  font-size: 3rem;
+  font-size: 3vw;
   color: #3c4858;
-  margin: 10px;
 }
 
 section h3 {
-  font-size: 1.5rem;
+  font-size: 2vw;
   color: #3c4858;
-  margin: 10px;
+  margin: 0.5vw;
 }
 
 section p {
-  font-size: 1.2rem;
+  font-size: 1.3vw;
   color: #999;
-  margin: 10px;
+  margin: 1vw;
 }
 
 section a {
@@ -106,7 +108,7 @@ section a:hover {
 }
 
 section .about-me {
-  max-width: 600px;
+  max-width: 50vw;
   text-align: center;
 }
 
@@ -124,7 +126,6 @@ section .skill-list,
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  padding: 40px;
 }
 
 section .contact-method div {
@@ -132,7 +133,7 @@ section .contact-method div {
 }
 
 section .contact-method div img {
-  width: 500px;
+  width: 40vw;
 }
 
 section#about {
@@ -156,11 +157,11 @@ section#contact {
 }
 
 #install-extension {
-  width: 200px;
-  height: 50px;
+  width: 20vw;
+  height: 5vh;
   cursor: pointer;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.5vw;
   color: #3c4858;
 }
 
@@ -262,31 +263,32 @@ p b {
 }
 
 .progress {
-  width: 600px;
+  width: 60vw;
 }
 
 .progress li {
   position: relative;
-  margin: 20px 0;
+  margin: 2vh 0;
   list-style: none;
+  font-size: 1.2vw;
 }
 
 .progress li:before {
-  top: calc(100% + 10px);
+  top: calc(100% + 1vh);
   left: 0;
   position: absolute;
   content: "";
-  height: 20px;
+  height: 2vh;
   width: 100%;
   background: rgba(0, 116, 217, 0.5);
 }
 
 .progress li:after {
-  top: calc(100% + 10px);
+  top: calc(100% + 1vh);
   left: 0;
   position: absolute;
   content: "";
-  height: 20px;
+  height: 2vh;
   width: 0;
   background: rgba(0, 116, 217, 1);
   animation-duration: 3s;
@@ -350,219 +352,8 @@ p b {
 
 /* Responsive */
 
-@media (max-width: 768px) {
-  .timeline {
-    width: 840px;
-  }
-
+@media (max-width: 767px) {
   section .contact-method div img {
     display: none;
-  }
-
-  section .skill-list {
-    width: 700px;
-  }
-}
-
-@media (max-width: 425px) {
-  .navbar ul li {
-    margin: 1rem 0.1rem;
-    padding: 0.4rem;
-  }
-
-  section .about-me {
-    max-width: 420px;
-  }
-
-  section h1 {
-    font-size: 3rem;
-  }
-
-  section h2 {
-    font-size: 2.2rem;
-  }
-
-  section h3 {
-    font-size: 1.2rem;
-  }
-
-  section p {
-    font-size: 1rem;
-  }
-
-  .progress {
-    width: 390px;
-  }
-
-  .timeline {
-    width: 500px;
-  }
-
-  .normal {
-    display: none;
-  }
-
-  .small {
-    display: block;
-  }
-
-  .timeline ul li:nth-child(odd) .time {
-    right: -200px;
-  }
-
-  .timeline ul li:nth-child(even) .time {
-    left: -200px;
-  }
-
-  section h3 {
-    max-width: 480px;
-  }
-
-  section .skill-list {
-    width: 415px;
-  }
-
-  section h1 {
-    width: 415px;
-    word-break: break-all;
-  }
-
-  section .contact-method {
-    width: 444px;
-  }
-}
-
-@media (max-width: 375px) {
-  .navbar ul li {
-    font-size: 14px;
-  }
-
-  section h1 {
-    font-size: 2.5rem;
-  }
-
-  section .about-me {
-    max-width: 370px;
-  }
-
-  .progress {
-    width: 340px;
-    padding: 0;
-  }
-
-  section#experience {
-    height: 140vh;
-  }
-
-  .timeline {
-    width: 460px;
-  }
-
-  .timeline ul li:nth-child(odd) .time {
-    right: -170px;
-  }
-
-  .timeline ul li:nth-child(even) .time {
-    left: -170px;
-  }
-
-  section h3 {
-    max-width: 390px;
-  }
-
-  section h1 {
-    max-width: 345px;
-  }
-
-  section .skill-list {
-    width: 360px;
-  }
-
-  section .contact-method {
-    width: 380px;
-  }
-
-  section .contact-method div {
-    padding: 10px;
-  }
-
-  .panel {
-    padding: 110px;
-  }
-
-  section .contact-method {
-    flex-flow: column;
-  }
-}
-
-@media (max-width: 320px) {
-  .navbar ul li {
-    font-size: 11px;
-  }
-
-  section {
-    height: 110vh;
-  }
-
-  .progress,
-  .about-me {
-    width: 300px;
-  }
-
-  section h1 {
-    font-size: 2rem;
-  }
-
-  section h2 {
-    font-size: 1.8rem;
-  }
-
-  section h3 {
-    font-size: 1rem;
-  }
-
-  .progress li {
-    margin: 10px 0;
-  }
-
-  .progress li:before,
-  .progress li:after {
-    top: calc(100% + 5px);
-    height: 10px;
-  }
-
-  .timeline ul li:nth-child(odd) .time {
-    top: 8px;
-    right: -158px;
-    padding: 5px 10px;
-  }
-
-  .timeline ul li:nth-child(even) .time {
-    top: 8px;
-    left: -158px;
-    padding: 5px 10px;
-  }
-
-  #install-extension {
-    width: 150px;
-    height: 40px;
-  }
-
-  section h3,
-  section .skill-list {
-    max-width: 320px;
-  }
-
-  .timeline ul li {
-    padding: 10px 15px;
-  }
-
-  .timeline ul li:nth-child(odd):before,
-  .timeline ul li:nth-child(even):before {
-    top: 15px;
-  }
-
-  .timeline {
-    width: 344px;
   }
 }
