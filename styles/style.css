@@ -68,6 +68,7 @@ section {
 
 .about-me {
   width: 90%;
+  max-width: 640px;
   text-align: center;
   padding: 10px;
 }
@@ -143,6 +144,7 @@ section#contact {
 
 .progress {
   width: 90%;
+  max-width: 640px;
 }
 
 .progress li {
@@ -226,7 +228,34 @@ section#contact {
   }
 }
 
+.small {
+  display: none;
+}
+
 /* Responsive */
+
+@media (max-width: 375px) {
+  #skill .panel {
+    padding-top: 0;
+  }
+  .skill-list {
+    padding: 0;
+  }
+
+  .normal {
+    display: none;
+  }
+
+  .small {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  ul#menu li {
+    margin: 0 5px;
+  }
+}
 
 @media (min-width: 768px) {
   .about-me {
