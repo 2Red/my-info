@@ -59,6 +59,7 @@ section {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
 }
 
 .skill-list {
